@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter feedback message:");
+        String message=sc.nextLine();
+        
+        System.out.print("enter keyword:");
+        String keyword=sc.nextLine();
+        
+        if(message.isEmpty()){
+            System.out.print("invalid feedback message");
+        }else if(message.toLowerCase().contains(keyword.toLowerCase())){
+            System.out.print("keyword found");
+        }else{
+            System.out.print("keyword not found");
+        }
+        
+    }
+}
