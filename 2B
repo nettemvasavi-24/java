@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter feedback message:");
+        String feedback=sc.nextLine();
+        
+        if(feedback.isEmpty()){
+            System.out.print("invaild feedback message");
+        }else if(feedback.length()>500){
+            System.out.print("Feedback Exceeds Maximum Length ");
+        }else{
+            System.out.print("Character:"+feedback.length());
+        }
+        
+    }
+}
